@@ -1,0 +1,13 @@
+<h3>{{shopname}}</h3>
+<div class="mt-5 ms-5 row">
+    <div *ngFor="let product of products; index as i" class="col-md-1 ms-5 mt-3">
+        <div class="card">
+            <img src="{{product.image}}" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">{{product.name}}</h5>
+                <p class="card-text">{{product.price}}</p>
+                <a class="btn btn-primary">Agregar al carrito</a>
+            </div>
+        </div>
+    </div>
+</div>

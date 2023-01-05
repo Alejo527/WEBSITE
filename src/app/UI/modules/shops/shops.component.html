@@ -1,0 +1,10 @@
+<div *ngFor="let shop of shops; index as i" class="col-md-3 ms-5 mt-3">
+        <div class="card">
+            <img src="{{shop.image}}" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">{{shop.name}}</h5>
+                <p class="card-text">{{shop.category}} - {{shop.location}}</p>
+                <a routerLink="/default/products/{{shop.name}}/{{shop._id}}"  class="btn btn-primary">Ver productos</a>
+            </div>
+        </div>
+</div>

@@ -52,6 +52,7 @@ export class LoginComponent implements OnInit {
     return this.loginForm.controls;
   }
   login() {
+    
 
    if (this.loginForm.valid) {
     var email:string=this.loginForm.controls['email'].value;

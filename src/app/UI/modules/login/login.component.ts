@@ -52,7 +52,7 @@ export class LoginComponent implements OnInit {
     return this.loginForm.controls;
   }
   login() {
-    
+
 
    if (this.loginForm.valid) {
     var email:string=this.loginForm.controls['email'].value;
@@ -63,6 +63,7 @@ export class LoginComponent implements OnInit {
         localStorage.setItem('username',email);
         this.router.navigate(['/']);
       }
+      
     },
       (error)=>{
         switch(error.status){
